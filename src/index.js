@@ -1,12 +1,8 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import Homepage from './components/pages/homepage'
+import { render } from 'react-dom'
 
-import './styles/reset.scss'
+import App from './App'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Homepage />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+const wrapper = document.getElementById('root')
+
+render(<App />, wrapper )
