@@ -6,9 +6,11 @@ import './default.scss'
 
 const Default = ({children}) => {
   return (
-    <div className='defaultTemplate'>
-      <Header text='Demo App'/>
-      <Navigation />
+    <div className='default'>
+      <div className='default__headings'>
+        <Header text='Demo App'/>
+        <Navigation />
+      </div>
       {children}
     </div>
   )

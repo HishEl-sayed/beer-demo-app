@@ -1,4 +1,9 @@
-.defaultTemplate {
-  max-width: 160rem;
+.default {
   margin: 0 auto;
+  &__headings {
+    background-color: #b22222;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
 }
