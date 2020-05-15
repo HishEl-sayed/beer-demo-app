@@ -1,4 +1,4 @@
-:Beer: :Computer: Demo React App using the Brewdog API (https://punkapi.com/)
+:beer: :computer: Demo React App using the Brewdog API (https://punkapi.com/)
 
 ## Available Scripts
 
@@ -21,14 +21,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Code Splitting
+## Code Splitting
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+## Analyzing the Bundle Size
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Deployment
+## Deployment
 
 To Be Done https://facebook.github.io/create-react-app/docs/deployment
