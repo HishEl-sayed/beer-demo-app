@@ -6,9 +6,10 @@ import Image from '../../atoms/image'
 import './product.scss'
 
 const Product = ({name, imgUrl}) => {
+  const hasImgUrl = !!imgUrl ? 'product__image--border' : 'product__image--placeholder'
   return (
     <div className='product'>
-      <div className='product__image'>
+      <div className={`product__image ${hasImgUrl}`}>
         <Image imgUrl={imgUrl} />
       </div>
       <p className='product__name'>
