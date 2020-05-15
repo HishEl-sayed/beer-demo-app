@@ -1,16 +1,14 @@
 .product {
   display: flex;
   flex-direction: column;
-  width: 20%;
   cursor: pointer;
-  padding: 0 2rem;
   &__image {
-    // border: 0.1rem solid #666;
+    border: 0.1rem solid #666;
+    width: 5rem;
+    margin: 0 auto;
+    padding: 2.5rem;
   }
   &__name {
     font-size: 1.4rem;
-  }
-  @media screen and (min-width: 45rem) {
-    width: 7%;
   }
 }
