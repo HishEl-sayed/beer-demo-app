@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from '../../atoms/icon'
 import './navigation.scss'
 
 const Navigation = () => {
@@ -6,13 +7,16 @@ const Navigation = () => {
     <nav className='navigation'>
       <ul className='navigation__container'>
         <li className='navigation__link'>
-          link 1
+          <Icon type='coffee' />
         </li>
         <li className='navigation__link'>
-          link 2
+          <Icon type='cutlery' />
         </li>
         <li className='navigation__link'>
-          link 3
+          <Icon type='percentage' />
+        </li>
+        <li className='navigation__link'>
+          <Icon type='search' />
         </li>
       </ul>
     </nav>
