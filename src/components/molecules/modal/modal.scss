@@ -53,5 +53,16 @@
     &--large {
       padding: 2rem 3rem;
     }
+    &--placeholder {
+      padding: 0;
+    }
+    &--unavailable {
+      background-color: #666;
+      font-size: 1.3rem;
+      width: 100%;
+      padding: 6rem 0.5rem;
+      text-align: center;
+      max-width: 14rem;
+    }
   }
 }

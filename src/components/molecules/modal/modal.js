@@ -19,6 +19,7 @@ const Modal = ({ isVisible, hide, selectedBeer }) => {
   const imgUrl = selectedBeer['image_url']
   const isKeg = imgUrl && !!imgUrl.includes('keg')
   const largeProduct = isKeg ? 'modal__image--large' : ''
+  const hasImgUrl = !!imgUrl
   return (
     isVisible ? createPortal(
       <Fragment>
@@ -43,9 +44,14 @@ const Modal = ({ isVisible, hide, selectedBeer }) => {
               <p>
                 <span className='modal__bold'>Pairs With</span>:{selectedBeer['food_pairing']}
               </p>
-              <div className={`modal__image ${largeProduct}`}>
-                <Image imgUrl={imgUrl} />
-              </div>
+              {hasImgUrl ? (
+                <div className={`modal__image ${largeProduct}`}>
+                  <Image imgUrl={imgUrl} />
+                </div> ) : ( 
+                <p className='modal__image--unavailable'>
+                  Image Unavailable
+                </p>
+              )}
             </div>
           </div>
         </div>
