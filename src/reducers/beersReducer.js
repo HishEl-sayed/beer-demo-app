@@ -7,7 +7,7 @@ import {
 const initialState = {
   allBeers: [],
   loading: false,
-  hasErrors: false,
+  hasErrors: false
 }
   
 const beersReducer = (state = initialState, action) => {

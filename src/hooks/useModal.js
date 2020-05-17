@@ -7,6 +7,7 @@ const useModal = () => {
     setModal(!isVisible)
   }
 
+
   return {
     isVisible,
     toggle

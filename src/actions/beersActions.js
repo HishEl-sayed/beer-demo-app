@@ -15,7 +15,7 @@ export const getBeersFailed = () => ({
   type: GET_BEERS_FAILED,
 })
 
-export function fetchBeers() {
+export const fetchBeers = () => {
   return async dispatch => {
     dispatch(getBeers())
     try {
