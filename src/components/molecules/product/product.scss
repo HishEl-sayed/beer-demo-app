@@ -1,21 +1,21 @@
 .product {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   width: 100%;
   &__image {
     max-width: 5rem;
     width: 100%;
+    cursor: pointer;
     margin: 0 auto;
     &--border {
-      padding: 2.5rem 5rem;
+      padding: 2.5rem 3rem;
       border-radius: 3rem;
       border: 0.1rem solid #666;
       transition: 250ms ease-in-out;
       &:hover {
         background-color: #ccc;
       }
-      @media screen and (min-width: 41rem) {
+      @media screen and (min-width: 68rem) {
         padding: 2.5rem 8rem;
       }
     }
