@@ -9,14 +9,8 @@ import './styles/reset.scss'
 
 const storeConfiguration = configureStore()
 
-const allView = () => (
-  <BeersListing pageCategory={''} />
-)
-const SteakView = () => (
-  <BeersListing pageCategory={'steak'} />
-)
-const PizzaView = () => (
-  <BeersListing pageCategory={'pizza'} />
+const BeersListingPage = ({ pageCategory }) => (
+  <BeersListing pageCategory={pageCategory} />
 )
 
 
@@ -24,9 +18,9 @@ const App = () => (
   <Provider store={storeConfiguration}>
     <Router>
       <Switch>
-        <Route path="/" component={allView} />
-        <Route path="/pizza" component={PizzaView} />
-        <Route path="/steak" component={SteakView} />
+        <Route exact path="/" component={() => <BeersListingPage pageCategory={''} />} />
+        <Route path="/pizza" component={() => <BeersListingPage pageCategory={'pizza'} />} />
+        <Route path="/steak" component={() => <BeersListingPage pageCategory={'steak'} />} />
       </Switch>
     </Router>
   </Provider>
