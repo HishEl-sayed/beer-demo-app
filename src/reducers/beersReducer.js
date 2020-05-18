@@ -7,6 +7,7 @@ import {
 const initialState = {
   allBeers: [],
   loading: false,
+  category: '',
   hasErrors: false
 }
   
@@ -21,7 +22,8 @@ const beersReducer = (state = initialState, action) => {
       return { 
         allBeers: action.payload, 
         loading: false, 
-        hasErrors: false 
+        hasErrors: false,
+        category: action.category
       }
     case GET_BEERS_FAILED:
       return { 

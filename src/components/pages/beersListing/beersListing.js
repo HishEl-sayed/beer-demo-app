@@ -1,4 +1,4 @@
-import React, { useEffect }  from 'react'
+import React, { useEffect, useRef }  from 'react'
 import { connect } from 'react-redux'
 
 import { fetchBeers } from '../../../actions/beersActions'
@@ -6,11 +6,14 @@ import { fetchBeers } from '../../../actions/beersActions'
 import Default from '../../templates/default'
 import ProductGrid from '../../organisms/productGrid'
 
-const BeersListing = ({ dispatch, loading, allBeers, hasErrors }) => {
-
-  useEffect(() => { 
-    dispatch(fetchBeers())
-  },[dispatch])
+const BeersListing = ({ dispatch, loading, allBeers, hasErrors, pageCategory }) => {
+  const test = pageCategory
+  const prevCategory = useRef(null)
+  useEffect(() => {
+    if (prevCategory.current === test) return
+    prevCategory.current = test
+    dispatch(fetchBeers(test))
+  },[dispatch, test])
 
   const renderBeers = () => {
     if (loading) return <p>Loading Beers...</p>
