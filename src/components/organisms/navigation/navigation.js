@@ -1,12 +1,13 @@
 import React from 'react'
 import Icon from '../../atoms/icon'
+import SubNavigation from '../../molecules/subNavigation'
 import './navigation.scss'
 
 const Navigation = () => {
   return (
     <nav className='navigation'>
       <ul className='navigation__container'>
-        <li className='navigation__category'>
+        <li className='navigation__category navigation__category--active'>
           <Icon type='coffee' />
         </li>
         <li className='navigation__category'>
@@ -19,6 +20,7 @@ const Navigation = () => {
           <Icon type='search' />
         </li>
       </ul>
+      <SubNavigation />
     </nav>
   )
 }

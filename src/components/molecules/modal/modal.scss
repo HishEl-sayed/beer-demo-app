@@ -14,6 +14,7 @@
     z-index: 100;
     margin: 5rem auto;
     position: relative;
+    opacity: 0.9;
     max-width: 57rem;
     width: 100%;
   }
@@ -30,6 +31,10 @@
       overflow: visible;
       text-overflow: initial;
     }
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
   }
   &__button {
     display: block;

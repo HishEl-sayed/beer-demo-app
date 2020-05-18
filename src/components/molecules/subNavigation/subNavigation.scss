@@ -1,0 +1,23 @@
+.subNavigation {
+  background-color: #666;
+  margin: 0; 
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  &__item {
+    font-size: 1.8rem;
+    color: #333;
+    transition: 250ms ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    &--active {
+      color: #fff;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+}

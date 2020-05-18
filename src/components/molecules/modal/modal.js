@@ -57,9 +57,11 @@ const Modal = ({ isVisible, hide, selectedBeer }) => {
                   </p>
                 )}
               </div>
-              <button className='modal__button'>
-                Add to Cart
-              </button>
+              <div className='modal__footer'>
+                <button className='modal__button'>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
         </div>
