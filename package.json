@@ -2,7 +2,6 @@
   "name": "beer-listing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://hisham.el-sayed.github.io/beer-demo-app",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
