@@ -18,9 +18,9 @@ const App = () => (
   <Provider store={storeConfiguration}>
     <Router>
       <Switch>
-        <Route exact path="/" component={() => <BeersListingPage pageCategory={''} />} />
-        <Route path="/pizza" component={() => <BeersListingPage pageCategory={'pizza'} />} />
-        <Route path="/steak" component={() => <BeersListingPage pageCategory={'steak'} />} />
+        <Route path='/beer-demo-app' component={() => <BeersListingPage pageCategory={''} />} />
+        <Route path='/pizza' component={() => <BeersListingPage pageCategory={'pizza'} />} />
+        <Route path='/steak' component={() => <BeersListingPage pageCategory={'steak'} />} />
       </Switch>
     </Router>
   </Provider>
