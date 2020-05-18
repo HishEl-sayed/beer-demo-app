@@ -25,6 +25,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    &--open {
+      white-space: initial;
+      overflow: visible;
+      text-overflow: initial;
+    }
   }
   &__button {
     display: block;
@@ -38,6 +43,7 @@
     max-width: 18rem;
     border-radius: 1.3rem;
     transition: 250ms ease-in-out;
+    margin-top: 1rem;
     &:hover {
       color: #fff;
       background-color: #000;
@@ -101,13 +107,6 @@
   @media screen and (min-width: 40rem) {
     &__info-container {
       width: 60%;
-    }
-  }
-  @media screen and (min-width: 68rem) {
-    &__description {
-      white-space: initial;
-      overflow: visible;
-      text-overflow: initial;
     }
   }
 }
