@@ -13,7 +13,7 @@ const App = () => (
   <Provider store={storeConfiguration}>
     <Router>
       <Switch>
-        <Route exact path='/' component={BeersListing} />
+        <Route component={BeersListing} />
       </Switch>
     </Router>
   </Provider>
