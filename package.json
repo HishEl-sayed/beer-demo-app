@@ -1,13 +1,13 @@
 {
   "name": "beer-listing",
   "version": "0.1.0",
-  "homepage": "http://HishEl-sayed.github.io/beer-demo-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "express": "^4.17.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -23,6 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "yarn build",
+    "start": "node src/server.js",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
