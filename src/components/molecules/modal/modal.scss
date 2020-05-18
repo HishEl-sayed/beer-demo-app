@@ -1,9 +1,6 @@
 .modal {
   position: fixed;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
   top: 0;
   left: 0;
   z-index: 1050;
@@ -15,27 +12,62 @@
   outline: 0;
   &__body {
     z-index: 100;
+    margin: 5rem auto;
     position: relative;
-    max-width: 50rem;
+    max-width: 57rem;
     width: 100%;
   }
-  &__close {
+  &__heading {
+    font-weight: bold;
+    font-size: 2.1rem;
+  }
+  &__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__button {
+    display: block;
     font-size: 1.4rem;
-    font-weight: 700;
-    justify-self: flex-start;
-    line-height: 1;
-    background-color: #b22222;
+    line-height: 1rem;
     text-transform: uppercase;
-    padding: 1rem;
-    color: #000;
     cursor: pointer;
     border: none;
+    background-color: #ccc;
+    padding: 1.7rem;
+    max-width: 18rem;
     border-radius: 1.3rem;
-    margin: 0 2rem 0.5rem;
+    transition: 250ms ease-in-out;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+    &--close {
+      justify-self: flex-start;
+      font-weight: bold;
+      background-color: #b22222;
+      padding: 1rem;
+      color: #000;
+      margin: 0 0 0.5rem 0;
+      &:hover {
+        color: #b22222;
+        background-color: #000;
+      }
+    }
   }
-  &__test {
+  &__info-container, &__image-container {
+    display: inline-block;
+  }
+  &__info-container {
+    width: 50%;
+  }
+  &__image-container {
+    vertical-align: top;
+    text-align: center;
+    margin: 4rem 0 0 4rem;
+  }
+  &__container {
     padding: 2rem;
-    margin: 0 2rem;
     font-size: 1.6rem;
     color: #fff;
     background-color: #444;
@@ -51,7 +83,8 @@
     background-color: #ccc;
     padding: 1rem 4rem;
     &--large {
-      padding: 2rem 3rem;
+      padding: 1rem;
+      max-width: 6rem;
     }
     &--placeholder {
       padding: 0;
@@ -63,6 +96,18 @@
       padding: 6rem 0.5rem;
       text-align: center;
       max-width: 14rem;
+    }
+  }
+  @media screen and (min-width: 40rem) {
+    &__info-container {
+      width: 60%;
+    }
+  }
+  @media screen and (min-width: 68rem) {
+    &__description {
+      white-space: initial;
+      overflow: visible;
+      text-overflow: initial;
     }
   }
 }

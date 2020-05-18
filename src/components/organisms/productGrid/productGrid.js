@@ -8,7 +8,7 @@ import useModal from '../../../hooks/useModal'
 import './productGrid.scss'
 
 const ProductGrid = ({ beers }) => {
-  const {isVisible, toggle, setData} = useModal()
+  const {isVisible, toggle} = useModal()
   return (
     <div className='productGrid'>
       {beers.map((beerData) => 

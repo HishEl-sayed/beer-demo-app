@@ -5,7 +5,6 @@ import { fetchBeers } from '../../../actions/beersActions'
 
 import Default from '../../templates/default'
 import ProductGrid from '../../organisms/productGrid'
-import './beersListing.scss'
 
 const BeersListing = ({ dispatch, loading, allBeers, hasErrors }) => {
 

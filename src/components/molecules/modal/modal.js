@@ -20,38 +20,46 @@ const Modal = ({ isVisible, hide, selectedBeer }) => {
   const isKeg = imgUrl && !!imgUrl.includes('keg')
   const largeProduct = isKeg ? 'modal__image--large' : ''
   const hasImgUrl = !!imgUrl
+  const foodPairing = selectedBeer && selectedBeer['food_pairing'] && selectedBeer['food_pairing'].join(', ')
   return (
     isVisible ? createPortal(
       <Fragment>
         <div className='modal' onClick={(event) => handleClick(event)} aria-modal aria-hidden tabIndex={-1} role='dialog'>
           <div className='modal__body'>
-            <button type='button' className='modal__close' data-dismiss='modal' aria-label='Close' onClick={hide}>
+            <button type='button' className='modal__button modal__button--close' data-dismiss='modal' aria-label='Close' onClick={hide}>
               Close
             </button>
-            <div className='modal__test'>
-              <h3>
+            <div className='modal__container'>
+              <h3 className='modal__heading'>
                 {selectedBeer.name}
               </h3>
-              <p>
-                {selectedBeer.tagline}
-              </p>
-              <p>
-                <span className='modal__bold'>ABV</span>: {selectedBeer.abv}
-              </p>
-              <p>
-                {selectedBeer.description}
-              </p>
-              <p>
-                <span className='modal__bold'>Pairs With</span>:{selectedBeer['food_pairing']}
-              </p>
-              {hasImgUrl ? (
-                <div className={`modal__image ${largeProduct}`}>
-                  <Image imgUrl={imgUrl} />
-                </div> ) : ( 
-                <p className='modal__image--unavailable'>
-                  Image Unavailable
+              <div className='modal__info-container'>
+                <p>
+                  {selectedBeer.tagline}
                 </p>
-              )}
+                <p>
+                  <span className='modal__bold'>ABV</span>: {selectedBeer.abv}
+                </p>
+                <p className='modal__description'>
+                  {selectedBeer.description}
+                </p>
+                <p>
+                  <span className='modal__bold'>Pairs With</span>: {foodPairing}
+                </p>
+              </div>
+              <div className='modal__image-container'>
+                {hasImgUrl ? (
+                  <div className={`modal__image ${largeProduct}`}>
+                    <Image imgUrl={imgUrl} />
+                  </div> ) : ( 
+                  <p className='modal__image--unavailable'>
+                    Image Unavailable
+                  </p>
+                )}
+              </div>
+              <button className='modal__button'>
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
