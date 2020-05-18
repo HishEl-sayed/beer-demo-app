@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/beer-demo-app/static/css/main.51db8fe8.chunk.css",
+    "main.js": "/beer-demo-app/static/js/main.c53c6b96.chunk.js",
+    "main.js.map": "/beer-demo-app/static/js/main.c53c6b96.chunk.js.map",
+    "runtime-main.js": "/beer-demo-app/static/js/runtime-main.cb7145c2.js",
+    "runtime-main.js.map": "/beer-demo-app/static/js/runtime-main.cb7145c2.js.map",
+    "static/js/2.d8d862fb.chunk.js": "/beer-demo-app/static/js/2.d8d862fb.chunk.js",
+    "static/js/2.d8d862fb.chunk.js.map": "/beer-demo-app/static/js/2.d8d862fb.chunk.js.map",
+    "index.html": "/beer-demo-app/index.html",
+    "precache-manifest.e89a88015d10901d5d017c435a107ce5.js": "/beer-demo-app/precache-manifest.e89a88015d10901d5d017c435a107ce5.js",
+    "service-worker.js": "/beer-demo-app/service-worker.js",
+    "static/css/main.51db8fe8.chunk.css.map": "/beer-demo-app/static/css/main.51db8fe8.chunk.css.map",
+    "static/js/2.d8d862fb.chunk.js.LICENSE.txt": "/beer-demo-app/static/js/2.d8d862fb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb7145c2.js",
+    "static/js/2.d8d862fb.chunk.js",
+    "static/css/main.51db8fe8.chunk.css",
+    "static/js/main.c53c6b96.chunk.js"
+  ]
+}
