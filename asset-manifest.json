@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/beer-demo-app/#/static/css/main.4adbcbbe.chunk.css",
-    "main.js": "/beer-demo-app/#/static/js/main.dd7bb213.chunk.js",
-    "main.js.map": "/beer-demo-app/#/static/js/main.dd7bb213.chunk.js.map",
-    "runtime-main.js": "/beer-demo-app/#/static/js/runtime-main.e3128f3f.js",
-    "runtime-main.js.map": "/beer-demo-app/#/static/js/runtime-main.e3128f3f.js.map",
-    "static/js/2.2ff7f7df.chunk.js": "/beer-demo-app/#/static/js/2.2ff7f7df.chunk.js",
-    "static/js/2.2ff7f7df.chunk.js.map": "/beer-demo-app/#/static/js/2.2ff7f7df.chunk.js.map",
-    "index.html": "/beer-demo-app/#/index.html",
-    "precache-manifest.5e39817ec8ab256d1cc091640646ead0.js": "/beer-demo-app/#/precache-manifest.5e39817ec8ab256d1cc091640646ead0.js",
-    "service-worker.js": "/beer-demo-app/#/service-worker.js",
-    "static/css/main.4adbcbbe.chunk.css.map": "/beer-demo-app/#/static/css/main.4adbcbbe.chunk.css.map",
-    "static/js/2.2ff7f7df.chunk.js.LICENSE.txt": "/beer-demo-app/#/static/js/2.2ff7f7df.chunk.js.LICENSE.txt"
+    "main.css": "/beer-demo-app/static/css/main.4adbcbbe.chunk.css",
+    "main.js": "/beer-demo-app/static/js/main.00766307.chunk.js",
+    "main.js.map": "/beer-demo-app/static/js/main.00766307.chunk.js.map",
+    "runtime-main.js": "/beer-demo-app/static/js/runtime-main.cb7145c2.js",
+    "runtime-main.js.map": "/beer-demo-app/static/js/runtime-main.cb7145c2.js.map",
+    "static/js/2.2ff7f7df.chunk.js": "/beer-demo-app/static/js/2.2ff7f7df.chunk.js",
+    "static/js/2.2ff7f7df.chunk.js.map": "/beer-demo-app/static/js/2.2ff7f7df.chunk.js.map",
+    "index.html": "/beer-demo-app/index.html",
+    "precache-manifest.0241916df1dea4b322f9d4639c2406e6.js": "/beer-demo-app/precache-manifest.0241916df1dea4b322f9d4639c2406e6.js",
+    "service-worker.js": "/beer-demo-app/service-worker.js",
+    "static/css/main.4adbcbbe.chunk.css.map": "/beer-demo-app/static/css/main.4adbcbbe.chunk.css.map",
+    "static/js/2.2ff7f7df.chunk.js.LICENSE.txt": "/beer-demo-app/static/js/2.2ff7f7df.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e3128f3f.js",
+    "static/js/runtime-main.cb7145c2.js",
     "static/js/2.2ff7f7df.chunk.js",
     "static/css/main.4adbcbbe.chunk.css",
-    "static/js/main.dd7bb213.chunk.js"
+    "static/js/main.00766307.chunk.js"
   ]
 }
