@@ -18,7 +18,7 @@ export const getBeersFailed = () => ({
 
 export const fetchBeers = (category) => {
   const constructCategory = () => {
-    return category ? `https://api.punkapi.com/v2/beers?food=${category}&per_page=80` : 'https://api.punkapi.com/v2/beers'
+    return category ? `https://api.punkapi.com/v2/beers?food=${category}&per_page=80` : 'https://api.punkapi.com/v2/beers?per_page=80'
   }
   return async dispatch => {
     dispatch(getBeers())

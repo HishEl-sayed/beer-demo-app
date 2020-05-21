@@ -1,22 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './subNavigation.scss'
 
 import { useHistory } from 'react-router-dom'
 
 const SubNavigation = () => {
   let history = useHistory()
-  const handleClick = (category) => {
-    history.push(category)
+  const handleClick = (category = '') => {
+    const categoryUrl = `${process.env.PUBLIC_URL}/${category}`
+    console.log(categoryUrl)
+    history.push(categoryUrl)
   }
+  const [active, setActive] = useState(null)
+  const activeClass = active ? 'subNavigation__item--active' : ''
   return (
     <ul className='subNavigation'>
-      <li onClick={category => handleClick(category = `${process.env.PUBLIC_URL}/`)} className='subNavigation__item subNavigation__item--active'>
+      <li onClick={() => handleClick()} className={`subNavigation__item`}>
         All
       </li>
-      <li onClick={category => handleClick(category = `${process.env.PUBLIC_URL}/pizza`)} className='subNavigation__item'>
+      <li onClick={() => handleClick('pizza')} className={`subNavigation__item`}>
         Pizza
       </li>
-      <li onClick={category => handleClick(category = `${process.env.PUBLIC_URL}/steak`)} className='subNavigation__item'>
+      <li onClick={() => handleClick('steak')} className={`subNavigation__item`}>
         Steak
       </li>
     </ul>
