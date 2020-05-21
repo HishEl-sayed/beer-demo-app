@@ -13,14 +13,13 @@ const BeersListingPage = ({ pageCategory }) => (
   <BeersListing pageCategory={pageCategory} />
 )
 
-
 const App = () => (
   <Provider store={storeConfiguration}>
     <Router>
       <Switch>
-        <Route path='/beer-demo-app' component={() => <BeersListingPage pageCategory={''} />} />
-        <Route path='/pizza' component={() => <BeersListingPage pageCategory={'pizza'} />} />
-        <Route path='/steak' component={() => <BeersListingPage pageCategory={'steak'} />} />
+        <Route exact path='/beer-demo-app' component={() => <BeersListingPage pageCategory={''} />} />
+        <Route path='/beer-demo-app/pizza' component={() => <BeersListingPage pageCategory={'pizza'} />} />
+        <Route path='/beer-demo-app/steak' component={() => <BeersListingPage pageCategory={'steak'} />} />
       </Switch>
     </Router>
   </Provider>
