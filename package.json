@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev": "react-scripts start --history-api-fallback",
-    "build": "react-scripts build",
+    "build": "PUBLIC_URL=/beer-demo-app react-scripts build",
     "build-localhost": "PUBLIC_URL=/ react-scripts build",
     "test": "react-scripts test",
     "predeploy": "yarn build",

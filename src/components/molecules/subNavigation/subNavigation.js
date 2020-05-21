@@ -10,13 +10,13 @@ const SubNavigation = () => {
   }
   return (
     <ul className='subNavigation'>
-      <li onClick={category => handleClick(category = '/beer-demo-app')} className='subNavigation__item subNavigation__item--active'>
+      <li onClick={category => handleClick(category = `${process.env.PUBLIC_URL}/`)} className='subNavigation__item subNavigation__item--active'>
         All
       </li>
-      <li onClick={category => handleClick(category = '/beer-demo-app/pizza')} className='subNavigation__item'>
+      <li onClick={category => handleClick(category = `${process.env.PUBLIC_URL}/pizza`)} className='subNavigation__item'>
         Pizza
       </li>
-      <li onClick={category => handleClick(category = '/beer-demo-app/steak')} className='subNavigation__item'>
+      <li onClick={category => handleClick(category = `${process.env.PUBLIC_URL}/steak`)} className='subNavigation__item'>
         Steak
       </li>
     </ul>
