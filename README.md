@@ -1,11 +1,5 @@
 :beer: :computer: Demo React App using the Brewdog API (https://punkapi.com/)
 
-Findings: 
-
-Given more time, TDD as a general rule of thumb inclusive of snapshot testing for react components. Would have added axios (as well as axios' mock adapter) to create my middleware logic to grab data from the brewdog API for use within the Redux thunks. 
-
-Enzyme to unit test user interaction. 
-
 TODO:-
 1. Checkout implementation and logic
 2. Navigation Logic
