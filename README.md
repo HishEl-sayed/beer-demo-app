@@ -4,6 +4,7 @@ TODO:-
 1. Checkout implementation and logic
 2. Navigation Logic
 3. Cicking through Sub-Headings
+4. Unit test integration
 
 ## Available Scripts
 
